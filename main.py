@@ -26,3 +26,7 @@ def create_station(station: Station):
 @app.get('/stations/')
 def get_stations():
     return stations
+
+@app.get('/')
+def get_stations():
+    return {"message", "Bienvenu sur l'API de IMRANE"}
